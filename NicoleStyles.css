@@ -1,0 +1,505 @@
+/* CSS Reset */
+
+/* added for index experiment */
+
+/* Styles for Navbar */
+.navbar-inverse{
+	border-radius:0;
+}
+#branding{
+	color:white;
+	font-weight: bold;
+	font-size: 180%;
+    -o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
+    transition:.25s;
+}
+#branding:hover{
+	color:#A9A9A9;
+}
+#bootstrap-overrides .navbar  li a{
+	color:#A9A9A9;
+	font-size: 120%
+}
+.nav-text-area{
+	padding:5px 0;
+}
+#bootstrap-overrides a:hover .nav-text-area{
+	border-top:2px solid #d8d8d8;
+	border-bottom:2px solid #d8d8d8;
+	color:#d8d8d8;
+}
+#bootstrap-overrides .nav-active{
+	border-top:2px solid white;
+	border-bottom:2px solid white;
+	color:white;
+}
+
+/* Styles for page header */
+
+.home-header{
+	background: url("mainbg.jpg") center center no-repeat;
+}
+.about-header{
+	background: url("grapes.jpg") center center no-repeat;
+}
+.contact-header{
+	background: url("contact.jpg") center center no-repeat;
+}
+.work-header{
+	background: url("work.jpg") center center no-repeat;	
+}
+.page-header{
+	margin-top:50px;
+	width:100%;
+	background-size: cover;
+	text-align: center;
+	padding:0;
+}
+.page-header h1{
+	text-align: center;
+	font-size: 500%;
+	color:white;
+}
+.page-header h2{
+	text-align:center;
+	color:white;
+	font-size:150%;
+	padding:0;
+}
+
+/* body styles */
+
+body{
+	min-height: 100%;
+	position:relative;
+}
+
+body, html { 
+    height: 100%;
+    margin: 0;
+}
+#bootstrap-overrides .home-landing-image{
+	/* The image used */
+    background-image: url("mainbg.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blue-heading{
+	color:rgb(36, 103, 141);
+	font-size: 300%;
+}
+.green-heading{
+	color:rgb(80, 141, 36);
+	font-size: 300%;
+}
+.home h2, .home h3{
+	margin-top:0;
+}
+.contact h2{
+	text-align: center;
+}
+.home .container .row, 
+.about .container .row,
+.about h2{
+	margin-top:35px;
+}
+p{
+	font-size: 150%;
+}
+#layout-img-1{
+	display:none;
+}
+.first-letter{
+	color:rgb(36, 103, 141);
+	font-size: 300%;
+	float:left;
+	margin-top:0;
+	line-height: 95%;
+	padding-right:5px;
+	font-family: Georgia;
+}
+.bolded{
+	font-weight:bold;
+}
+.about hr, .contact hr{
+	border-top: 2px solid rgb(36, 103, 141);
+}
+.gray-card{
+	border:2px solid rgb(36, 103, 141);
+	border-radius: 10px;
+	padding:10px;
+	background:#f2f1f6;
+	margin:10px 0;
+}
+footer{
+	text-align: center;
+	padding:15px 0;
+	background:#f2f1f6;
+	width:100%;
+}
+
+/* Contact page styles */
+
+input, label, textarea{
+	display: block;
+}
+label{
+	font-size: 200%;
+	color:rgb(36, 103, 141);
+}
+input{
+	width:100%;
+	font-size: 200%;
+	padding:3px 5px;
+}
+textarea{
+	width:100%;
+	font-size: 150%;
+	resize:none;
+}
+form a p{
+	margin:0 25px;
+	font-size: 200%;
+}
+form a{
+	margin:10px 0;
+}
+form{
+	text-align: center;
+}
+.contact-info{
+	font-size: 180%;
+	text-align: center;
+	padding:5px 0;
+}
+.contact-info i{
+	padding:0 10px;
+}
+i span{
+	font-family: Helvetica;
+}
+
+/* Work page Styles */
+
+#bootstrap-overrides .carousel-control{
+	background-image: none;
+}
+
+#myCarousel h2{
+	text-align: center;
+}
+#bootstrap-overrides #myCarousel img{
+	border-radius: 50%;
+	object-fit: cover;
+	height:300px;
+	width:300px;
+	padding: 0;
+	float:right;
+	margin:20px 0;
+}
+
+#myCarousel h2{
+	float:left;
+}
+#myCarousel .item .side-text{
+	clear:left;
+	color:black;
+	margin-right:5%;
+	font-size: 150%;
+	margin-bottom:0;
+}
+
+#myCarousel{
+	margin:0px 0%;
+}
+.carousel-control,
+.carousel-control:focus{
+	color:rgb(36, 103, 141);
+}
+.carousel-control{
+	width:3%;
+}
+.carousel-control:hover{
+	color:rgb(36, 103, 141);
+}
+.carousel-indicators{
+	bottom:0px;
+}
+.carousel-indicators li{
+	border:1px solid rgb(36, 103, 141);
+}
+#bootstrap-overrides .carousel-indicators .active{
+	background-color: rgb(36, 103, 141);
+	border:1px solid rgb(36, 103, 141);
+}
+.center{
+	text-align: center;
+}
+#myCarousel h3{
+	color:rgb(36, 103, 141);
+	margin-top:10px;
+	margin-bottom: 5px;
+}
+.fa-circle{
+	color:rgb(36, 103, 141);
+	transition: all 0.2s ease;
+}
+
+.work .fa-stack:hover .fa-circle{
+	color:rgb(27, 77, 106);
+}
+
+#myCarousel .fa-stack{
+	cursor:pointer;
+}
+.icon-container{
+	height:37px;
+	line-height: 37px;
+	display:inline;
+}
+.tag-text{
+	font-size: 150%;
+	color:rgb(36, 103, 141);
+	vertical-align: middle;
+	line-height: normal;
+	display:none;
+}
+.carousel-main{
+	border-right:2px solid rgb(36, 103, 141);
+}
+div#myCarousel{
+	padding:0 10px;
+}
+div.carousel-nav{
+	padding:0;
+	height:340px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+.carousel-nav li{
+	font-size: 120%;
+}
+ul#my-carousel-indicator{
+	padding:0;
+	list-style: none;
+	margin-bottom: 0;
+}
+#my-carousel-indicator li{
+	font-size: 130%;
+	border-top:1px solid rgb(36, 103, 141);
+	padding-left:10px;
+	cursor:pointer;
+	width:262px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
+    transition:.25s;
+}
+#my-carousel-indicator li:first-of-type{
+	border-top:none;
+}
+.carousel-main{
+	padding: 0 10px;
+}
+#my-carousel-indicator li:hover{
+	background-color: rgba(36, 103, 141, 0.6);
+	padding-left: 7px;
+}
+
+/* Fixes white line problem on carousel */
+#bootstrap-overrides #myCarousel .item{
+	border:none;
+}
+button{
+	float:right;
+	margin:2px;
+	height:33px;
+	margin-right:25px;
+	background-color: rgb(36, 103, 141);
+	color:white;
+	font-size: 120%;
+	border:none;
+	border-radius:4px;
+	transition: all 0.2s ease;
+}
+button:hover{
+	background-color:rgb(27, 77, 106);
+}
+
+.modal-title{
+	text-align: center;
+	font-size: 200%;
+}
+.modal-header{
+	padding: 0;
+}
+.modal-body img{
+	object-fit: cover;
+	height:300px;
+	width:300px;
+}
+.modal-body ul{
+	text-align: center;
+	position: relative;
+	white-space: nowrap;
+	padding:0px;
+}
+.modal-body li{
+	display:inline-block;
+	list-style: none;
+}
+.modal-body{
+	width:898px;
+	height:300px;
+	padding:0 10px;
+	overflow-x:scroll;
+	overflow-y:hidden;
+}
+.modal-dialog{
+	margin-top:15%;
+}
+.work h2{
+	text-align:center;
+}
+.work-videos{
+	text-align: center;
+}
+.work-videos h2, .work-certs h2{
+	margin-top:5px;
+}
+.hide-element{
+	display:none;
+}
+.cert-imgs img{
+	height:150px;
+	object-fit: contain;
+}
+.cert-imgs{
+	text-align: center;
+}
+.seperator{
+	border-bottom:2px solid rgb(36, 103, 141);
+	margin:30px 15px;
+}
+.cert-imgs h2{
+	display:inline;
+	position: relative;
+	top:22px;
+	padding:0 5px;
+	background-color: white;
+}
+.icon-card{
+	box-sizing: border-box;
+	display:inline-block;
+	text-align: center;
+}
+.icon-card .fa-circle{
+	color:rgb(36, 103, 141);
+}
+.icon-card h3{
+	font-size: 180%;
+	margin-bottom: 0;
+}
+.icon-card p{
+	font-size: 120%;
+}
+#definitions{
+	background-color:#f2f1f6; 
+}
+.home-pic{
+	object-fit: cover;
+	width:250px;
+}
+.home h2{
+	margin-top:20px;
+}
+.home-center{
+	padding-top:10%;
+}
+.home-landing-image h2{
+	font-size: 450%;
+	font-weight:bold;
+}
+
+
+@media only screen and (min-width: 992px){
+	#layout-img-1{
+		display:block;
+	}
+	#layout-img-2{
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.header-text{
+		padding:120px 10px;
+	}
+
+	.home .header-text{
+		padding:89px 10px;
+	}
+	.about .header-text h1,
+	.contact .header-text h1,
+	.work .header-text h1{
+		background:rgba(0,0,0,.6);
+		display:inline;
+		padding:5px 20px;
+		border-radius: 50px;
+	}
+	.contact .container .row{
+		margin-top:15px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.home .header-text{
+		padding:27px 10px;
+	}
+	.contact .header-text, .about .header-text{
+		padding:65px 10px;
+	}
+	.about .header-text h1,
+	.contact .header-text h1{
+		background:rgba(0,0,0,.6);
+		border-radius: 40px;
+		display:inline;
+		font-size:300%;
+		padding:0 15px;
+	}
+	.page-header h1{
+		font-size: 300%;
+	}
+	.page-header h2{
+		font-size:120%;
+	}
+	.green-heading, .blue-heading{
+		font-size: 200%;
+	}
+	.about .green-heading, .about .blue-heading{
+		text-align: center;
+	}
+	p, .contact-info, input, textarea{
+	font-size:120%;
+	}
+	.first-letter{
+	font-size:265%;
+	line-height: 105%;
+	}
+	.spacer{
+		display:none;
+	}
+}

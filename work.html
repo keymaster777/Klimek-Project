@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width = device-width, intial-scale = 1" >
+		<title>Nicole Klimek - Home</title>
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="NicoleStyles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.fa-stack').on('click', function() {
+					if( $(this).next().css('display') == 'none'){
+						$(this).siblings('.tag-text').hide(200);
+						$(this).next().show(200);
+					}else{
+						$(this).next().hide(200);
+					}
+				});
+
+				$('.carousel-control').on('click', function() {
+					$('.tag-text').hide();
+				})
+			});
+		</script>
+	</head>
+
+	<body id="bootstrap-overrides" class="work">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span> 
+				    </button>
+					<a class="navbar-brand" id="branding" href="index.html">Nicole Klimek</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html"><span class="nav-text-area">Home</span></a></li>
+						<li><a href="work.html"><span class="nav-text-area nav-active">My Work</span></a></li>			
+						<li><a href="about.html"><span class="nav-text-area">About</span></a></li>
+						<li><a href="contact.html"><span class="nav-text-area">Contact</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class='container-fluid'>
+			<div class="row">
+				<header class="work-header page-header">
+					<div class="header-text">
+						<h1>My Work</h1>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<h2 class="blue-heading">Lorem Ipsum</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar vitae quam vel aliquam. Proin placerat justo tellus, nec lobortis orci blandit eu. Duis finibus et tortor nec mollis. Duis sed mi placerat, efficitur ipsum eu, auctor quam. Vestibulum dui est, congue non fermentum in, blandit eget dolor. Nulla gravida dolor vitae gravida laoreet. Ut interdum nec tortor a scelerisque.</p>
+			<div id="myCarousel" class="carousel slide gray-card row" data-ride="carousel" data-interval="false">
+
+
+				<div class="col-md-9 carousel-main"
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+
+					<div class="item active">
+						<div class="row">
+							<div class="col-md-5 center">
+								<img src="WorkPics/CommonCrow/CommonCrow.jpg" alt="Common Crow">
+							</div>
+							<div class="col-md-7">
+								<h2 class="blue-heading">Common Crow</h2>
+								<p class="side-text">
+									Common Crow is an independently owned natural food store that I've had the pleasure of working with. They rock the community they  provide for and think outside the box when it comes to merchandising and product selection.
+								</p>
+								<h3>What I did</h3>
+								<div class="icon-container" >
+									<span class="fa-stack fa-lg" title="Store Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Store Design</span>
+									
+									<span class="fa-stack fa-lg" title="Interior Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Interior Design</span>
+
+									<span class="fa-stack fa-lg" title="Equipment">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Equipment</span>
+
+								</div>
+								<button type="button" data-toggle="modal" data-target="#commonCrowModal">Gallery</button>
+
+							</div>							
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="row">
+							<div class="col-md-5 center">
+								<img src="WorkPics/CommonGround/CommonGround.jpg" alt="Common Ground">
+							</div>
+							<div class="col-md-7">
+								<h2 class="blue-heading">Common Ground</h2>
+								<p class="side-text">
+									I've worked with CGFC for years and they continue to project a spectacular brand identity and create innovative solutions to keep their shoppers engaged.
+								</p>
+								<h3>What I did</h3>
+								<div class="icon-container" >
+									<span class="fa-stack fa-lg" title="Store Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Store Design</span>
+
+									<span class="fa-stack fa-lg" title="Interior Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Interior Design</span>
+									
+									<span class="fa-stack fa-lg" title="Marketing">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-pie-chart fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Marketing</span>
+								</div>
+								<button type="button" data-toggle="modal" data-target="#commonGroundModal">Gallery</button>
+							</div>							
+						</div>		
+					</div>
+					<div class="item">	
+						<div class="row">
+							<div class="col-md-5 center">
+								<img src="WorkPics/Dandelion/Dandelion.jpg" alt="Common Ground" />
+							</div>
+							<div class="col-md-7">
+								<h2 class="blue-heading">Dandelion Foods</h2>
+								<p class="side-text">
+									This co-op does an amazing job of bringing service, food and education to their Almonte community. They continue to grow and I'm so happy to shop there any time I'm in the area!
+								</p>
+								<h3>What I did</h3>
+									<div class="icon-container" >
+									<span class="fa-stack fa-lg" title="Store Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Store Design</span>
+
+									<span class="fa-stack fa-lg" title="Equipment">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Equipment</span>
+								</div>
+								<button type="button" data-toggle="modal" data-target="#dandelionModal">Gallery</button>
+							</div>							
+						</div>
+						
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+				</div>
+				<!-- Indicators -->
+
+				<div class="col-md-3 carousel-nav">										
+					<ul id="my-carousel-indicator">
+						<li data-target="#myCarousel" data-slide-to="0" class="active">Common Crow</li>
+						<li data-target="#myCarousel" data-slide-to="1">Common Ground</li>
+						<li data-target="#myCarousel" data-slide-to="2">Dandelion Foods</li>
+						<li>Dill Pickle</li>
+						<li>Durham Co-op</li>
+						<li>Eastside Food Co-op</li>
+						<li>Green Top Grocery</li>
+						<li>Hub City Food Co-op</li>
+						<li>Natural Harvest Food Co-op</li>
+						<li>New Morning Market</li>
+						<li>Oryana</li>
+						<li>Prairie Roots</li>
+						<li>Portland Food</li>
+						<li>Renaissance Community Co-op</li>
+						<li>Seward Food Co-op</li>
+						<li>Spiral Food Co-op</li>
+						<li>The Sugar Beet</li>
+						<li>Tidal Creek</li>
+						<li>Turnip Truck</li>
+						<li>Wild Oats Marketplace</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="modal fade" id="commonCrowModal" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">Common Crow Gallery</h4>
+			        </div>
+			        <div class="modal-body">
+			        	<ul>
+			        		<li><img src="WorkPics/CommonCrow/CommonCrow1.jpg" /></li>
+			        		<li><img src="WorkPics/CommonCrow/CommonCrow2.jpg" /></li>
+			        	</ul>
+			        </div>
+			      </div>
+			    </div>
+			</div>
+			<div class="modal fade" id="commonGroundModal" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">Common Ground Gallery</h4>
+			        </div>
+			        <div class="modal-body">
+			        	<ul>
+				        	<li><img src="WorkPics/CommonGround/CommonGround1.jpg" /></li>
+				        	<li><img src="WorkPics/CommonGround/CommonGround2.jpg" /></li>
+				        	<li><img src="WorkPics/CommonGround/CommonGround3.png" /></li>
+			        	</ul>
+			        </div>
+			      </div>
+			    </div>
+			</div>
+			<div class="modal fade" id="dandelionModal" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">Dandelion Gallery</h4>
+			        </div>
+			        <div class="modal-body">
+			        	<ul>
+				        	<li><img src="WorkPics/Dandelion/Dandelion1.png" /></li>
+				        	<li><img src="WorkPics/Dandelion/Dandelion2.png" /></li>
+				        	<li><img src="WorkPics/Dandelion/Dandelion3.png" /></li>
+			        	</ul>
+			        </div>
+			      </div>
+			    </div>
+			</div>
+
+			<div class="row hide-element">
+				<div class="col-md-6">
+					<div class="work-videos gray-card">
+					<h2 class="blue-heading">Webinars</h2>
+					<iframe width="504" height="283" src="https://www.youtube.com/embed/wjASguFDHiU" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="work-certs gray-card" >
+						<h2 class="blue-heading">Certifications</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row cert-imgs">
+				<div class="seperator">
+					<h2 class="blue-heading">Certifications</h2>
+				</div>
+				<div class="col-md-4">
+					<img src="LEED.jpg" />
+				</div>
+				<div class="col-md-4">
+					<img src="ASID.png" />
+				</div>
+				<div class="col-md-4">
+					<img src="IIDA.png" />
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p>&copy; 2017 Copyright: Nicole Klimek</p>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>
