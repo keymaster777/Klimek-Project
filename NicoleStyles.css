@@ -83,7 +83,7 @@ body, html {
 }
 #bootstrap-overrides .home-landing-image{
 	/* The image used */
-    background-image: url("mainbg.jpg");
+    background-image: url("main-bg-test.jpg");
 
     /* Full height */
     height: 100%; 
@@ -93,6 +93,11 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.opacity-layer{
+		background-color:rgba(0,0,0,.3);
+    	height:100%;
+}
+
 
 .blue-heading{
 	color:rgb(36, 103, 141);
@@ -428,11 +433,32 @@ button:hover{
 	margin-top:20px;
 }
 .home-center{
-	padding-top:10%;
+	margin-top:30vh;
+	background-color: rgba(0,0,0,.5)
+}
+#bootstrap-overrides .home-center{
+	border-radius: 70px;
+}
+.home-center h2{
+	color:white;
+	margin-bottom: 20px;
+}
+.home-center p{
+	font-size: 230%;
+	color:white;
+	padding:0 5% 2% 5%;
 }
 .home-landing-image h2{
 	font-size: 450%;
 	font-weight:bold;
+	font-family: Garamond, Palatino;
+}
+.green-underline{
+	border-bottom: 4px solid rgb(80, 141, 36);
+}
+.home-landing-image a{
+	margin-top:5vh;
+	font-size: 200%;
 }
 
 
