@@ -1,7 +1,6 @@
 
 
 /* added for index experiment */
-
 /* Styles for Navbar */
 .navbar-inverse{
 	border-radius:0;
@@ -420,6 +419,7 @@ button:hover{
 	font-size: 120%;
 }
 #definitions{
+	padding:30px 0 30px 0;
 	background-color:#f2f1f6; 
 }
 .home-pic{
@@ -457,7 +457,24 @@ button:hover{
 	margin-top:5vh;
 	font-size: 200%;
 }
-
+.home-landing-image i{
+	color:white;
+	font-size: 40px;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	padding-bottom:2vh;
+	-o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
+    transition:.25s;
+}
+.home-landing-image i:hover{
+	color:#A9A9A9;
+	cursor:pointer;
+}
 
 @media only screen and (min-width: 992px){
 	#layout-img-1{

@@ -22,6 +22,10 @@
 						$("#"+targetedElement).fadeIn();
 					});
 				});
+
+				$(".fa-chevron-down").on("click", function() {
+					$("html, body").animate({ scrollTop: $('#definitions').offset().top-50 }, 1000);
+				})
 			});
 		</script>
 	</head>
@@ -56,13 +60,15 @@
 					<p>My goal is to support the growth of food co-ops and independent natural foods stores. Nowadays, that's harder than ever. With competition and corporate entities wanting their piece of the organic pie, stores are facing very real threats.</p>
 				</div>
 				<div class="center">
-					<a href="contact.html" class="btn btn-primary">Lets Work Togethor</a>
+					<div><a href="contact.html" class="btn btn-primary">Lets Work Togethor</a></div>
+				
 				</div>
+				<i class="fa fa-chevron-down center" aria-hidden="true"></i>
 			</div>
 		</div>
 			<div class="container-fluid" id="definitions">
 				<div class="container">
-				<h2 class="blue-heading center">Design Definitions</h2>
+				<h2 id="design-definitions" class="blue-heading center">Design Definitions</h2>
 					<div class="row">
 						<div id="store-design-card" class="icon-card col-md-4">
 							<h3 class="blue-heading">Store Design</h3>
