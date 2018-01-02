@@ -39,9 +39,6 @@
 
 /* Styles for page header */
 
-.home-header{
-	background: url("mainbg.jpg") center center no-repeat;
-}
 .about-header{
 	background: url("grapes.jpg") center center no-repeat;
 }
@@ -83,7 +80,7 @@ body, html {
 }
 #bootstrap-overrides .home-landing-image{
 	/* The image used */
-    background-image: url("main-bg-test.jpg");
+    background-image: url("mainbg.jpg");
 
     /* Full height */
     height: 100%; 
