@@ -419,7 +419,7 @@ button:hover{
 	font-size: 120%;
 }
 #definitions{
-	padding:30px 0 30px 0;
+	padding:50px 0 50px 0;
 	background-color:#f2f1f6; 
 }
 .home-pic{
@@ -474,6 +474,22 @@ button:hover{
 .home-landing-image i:hover{
 	color:#A9A9A9;
 	cursor:pointer;
+}
+#qualifications{
+	padding:50px 0 50px 0;
+}
+#qualifications ul{
+	list-style-type: none;
+}
+#qualifications li{
+	font-size: 200%;
+	margin-bottom:2vh;
+}
+#qualifications img{
+	height:50px;
+	width:50px;
+	float:left;
+	margin-right:5px;
 }
 
 @media only screen and (min-width: 992px){
