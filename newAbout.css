@@ -126,3 +126,9 @@ footer p{
 	}
 }
 /* END Footer Styles */
+
+.nicole-image{
+	background: url("Nicole.png") center center no-repeat;
+	background-size:contain;
+	height:30rem;
+}
