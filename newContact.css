@@ -39,23 +39,9 @@
 
 /* Font size for REM */
 html {
-	font-size: 16px;
+	font-size: 1.5vh;
 }
-@media only screen and (min-height: 1080px){
-	html{
-		font-size: 20px;
-	}
-}
-@media only screen and (max-height: 1080px){
-	html{
-		font-size: 16px;
-	}
-}
-@media only screen and (max-height: 800px){
-	html{
-		font-size: 12px;
-	}
-}
+
 
 /* END Font size for REM */
 
@@ -161,7 +147,7 @@ footer{
 footer p{
 	margin-bottom: 0;
 }
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 768px){
 	.viewport-footer{
 		position:absolute;
 		right:0;
