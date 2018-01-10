@@ -126,15 +126,66 @@ body{
 
 
 /* About page Image Styles */
-#nicole-about-image{
-	display:inline-block;
-	width:auto;
-	height:100%;
-	vertical-align: top;
+
+@media only screen and (min-width:1001px){
+	.nicole-about-image{
+		display:inline-block;
+		width:auto;
+		height:100%;
+		vertical-align: top;
+	}
+	#about-containing-text{
+		text-align: left;
+		display:inline-block;
+		width:48%;
+		margin-right:2%;
+	}
+	#about-desktop-image{
+		display:inline-block;
+	}
+	#about-mobile-image{
+		display:none;
+	}
 }
-#about-containing-text{
-	text-align: left;
-	display:inline-block;
-	width:48%;
-	margin-right:2%;
+
+@media only screen and (min-width:500px) and (max-width: 1000px){
+	.nicole-about-image{
+		display:inline-block;
+		float:right;
+		width:170px;
+		height:auto;
+		margin:0 8px 0 8px;
+	}
+	#about-containing-text{
+		display:block;
+		text-align: left;
+	}
+	#about-desktop-image{
+		display:none;
+	}
+	#about-mobile-image{
+		display:inline-block;
+	}
+	.about div.center{
+		margin:0 40px 0 40px;
+	}
+}
+@media only screen and (max-width: 499px){
+	.nicole-about-image{
+		display:inline-block;
+		float:right;
+		width:45%;
+		height:auto;
+		margin:0 8px 0 8px;
+	}
+	#about-containing-text{
+		display:block;
+		text-align: left;
+	}
+	#about-desktop-image{
+		display:none;
+	}
+	#about-mobile-image{
+		display:inline-block;
+	}
 }
