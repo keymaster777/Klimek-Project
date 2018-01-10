@@ -127,7 +127,7 @@ body{
 
 /* About page Image Styles */
 
-@media only screen and (min-width:1001px){
+@media only screen and (min-width:1200px){
 	.nicole-about-image{
 		display:inline-block;
 		width:auto;
@@ -148,11 +148,11 @@ body{
 	}
 }
 
-@media only screen and (min-width:500px) and (max-width: 1000px){
+@media only screen and (min-width:500px) and (max-width: 1199px){
 	.nicole-about-image{
 		display:inline-block;
 		float:right;
-		width:170px;
+		width:30%;
 		height:auto;
 		margin:0 8px 0 8px;
 	}
