@@ -49,7 +49,6 @@ html {
 	color:rgb(36, 103, 141);
 	font-size: 2rem;
 	margin-bottom: 1rem;
-	margin-top:1rem;
 }
 .center{
 	text-align: center;
@@ -57,28 +56,28 @@ html {
 p{
 	font-size: 1.3rem;
 }
-.contact-info{
-	font-size: 1.5rem;
-	margin:1rem 0;
+.first-letter{
+	color:rgb(36, 103, 141);
+	font-size: 3.6rem;
+	float:left;
+	margin-top:0;
+	line-height: 3.4rem;
+	padding-right:.3rem;
+	font-family: Georgia;
 }
-.contact-info i{
-	margin:0 1rem;
-}
-.blue-hr{
-	border-top: 2px solid rgb(36, 103, 141);
-}
-/* END Typography Styles */
+/* END Typograpyh Styles */
 
 
 
 /* Page Header Styles */
 .page-header{
 	margin-top:50px;
-	margin-bottom:2vh;
 	width:100%;
 	background-size: cover;
 	text-align: center;
 	padding:0;
+	/* Should be 5 rather then 3 on pages without a sub-header */
+	margin-bottom:5vh;
 }
 .page-header h1{
 	font-size: 3.5rem;
@@ -93,46 +92,10 @@ p{
 	padding:.3rem 1.2rem;
 	border-radius: 4.5rem;
 }
-.contact-header{
-	background: url("contact.jpg") center center no-repeat;
+.about-header{
+	background: url("grapes.jpg") center center no-repeat;
 }
 /* END Page Header Styles */
-
-
-
-/* Contact Card Styles */
-input, label, textarea{
-	display: block;
-}
-input{
-	width:100%;
-	font-size: 1.7rem;
-	padding:3px 5px;
-}
-textarea{
-	width:100%;
-	font-size: 1.2rem;
-	resize:none;
-	padding:3px 5px;
-}
-form a p{
-	margin:0 1.5rem;
-	font-size: 1.5rem;
-}
-form a{
-	margin:.7rem 0;
-}
-.gray-card{
-	border:2px solid rgb(36, 103, 141);
-	border-radius: .7rem;
-	padding:.7rem;
-	background:#f2f1f6;
-	margin:.7rem 0;
-}
-form .blue-heading{
-	margin-bottom: 0;
-}
-/* END Contact Card Styles */
 
 
 
@@ -145,12 +108,12 @@ footer{
 footer p{
 	margin-bottom: 0;
 }
-body{
-	margin-bottom: 45px;
-}
 html{
 	min-height:100%;
 	position:relative;
+}
+body{
+	margin-bottom: 55px;
 }
 .viewport-footer{
 	position:absolute;
@@ -161,20 +124,13 @@ html{
 /* END Footer Styles */
 
 
-@media only screen and (max-width: 767px){
-	.spacer{
-		display:none;
-	}
+
+/* About page Image Styles */
+#about-containing-image{
+	overflow:hidden;
 }
-	#contact-mobile-header{display:none;}
-	#contact-desktop-header{display:block;}
-@media only screen and (max-width: 500px){
-	.contact-info i{
-		font-size: 1.4rem;
-	}
-	.blue-heading{
-		font-size: 1.7rem;
-	}
-	#contact-mobile-header{display:block;}
-	#contact-desktop-header{display:none;}
+#nicole-about-image{
+	display:block;
+	width:auto;
+	height:100%;
 }

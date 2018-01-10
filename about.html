@@ -10,7 +10,14 @@
 
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="NicoleStyles.css" />
+		<link rel="stylesheet" type="text/css" href="newAbout.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var responsiveImageHeight = $("#about-containing-text").height();
+				$("#about-containing-image").css('height', responsiveImageHeight);
+			});
+		</script>
 	</head>
 
 	<body id="bootstrap-overrides" class="about">
@@ -45,9 +52,9 @@
 			</div>
 		</div>
 
-		<div class="container">
+		<div class="about-container container">
 			<div class="row">
-				<div class="rc-text-block col-md-6 col-xs-12">
+				<div id="about-containing-text" class="col-md-6 col-xs-12">
 					<p><span class="first-letter">T</span>o put it quite simply, I <span class="bolded">live</span> co-ops and natural foods stores! I've had a passion for cooperation and local, sustainable economy that dates back as far as I can remember.</p>
 
 					<p>When it came time to decide what my grown up job would be I decided I would take my talents as an artist and designer to the professional level - interior design and architecture. I added a marketing degree later on because I feel stores need to find their voice in the new age of direct competition and I want to help them.</p>
@@ -58,14 +65,14 @@
 
 					<p>I put 110% into every project and those stores become like second homes to me. And through a proven expertise in visual arts, I can help those stores lead the way of the future. </p>
 				</div>
-				<span class="col-sm-1"></span>
-				<img src="Nicole.png" class="col-md-6 col-sm-10 col-xs-12" />
-				<span class="col-sm-1"></span>
+				<div id="about-containing-image" class="col-xs-12col-sm-12 col-md-6">
+					<img id="nicole-about-image" src="Nicole.png" />
+				</div>
 			</div>
 		</div>
 
 
-		<footer>
+		<footer class="viewport-footer">
 			<p>&copy; 2017 Copyright: Nicole Klimek</p>
 		</footer>
 
