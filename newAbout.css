@@ -126,11 +126,15 @@ body{
 
 
 /* About page Image Styles */
-#about-containing-image{
-	overflow:hidden;
-}
 #nicole-about-image{
-	display:block;
+	display:inline-block;
 	width:auto;
 	height:100%;
+	vertical-align: top;
+}
+#about-containing-text{
+	text-align: left;
+	display:inline-block;
+	width:48%;
+	margin-right:2%;
 }
