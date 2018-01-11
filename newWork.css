@@ -101,14 +101,26 @@ p{
 #bootstrap-overrides .carousel-control{
 	background-image: none;
 }
-#bootstrap-overrides #myCarousel img{
+#myCarousel img{
 	border-radius: 50%;
 	object-fit: cover;
-	height:300px;
-	width:300px;
 	padding: 0;
 	float:right;
-	margin:20px 0;
+	
+}
+@media only screen and (min-width: 1200px){
+	#myCarousel img{
+		height:300px;
+		width:300px;
+		margin:20px 0;
+	}
+}
+@media only screen and (max-width: 1199px){
+	#myCarousel img{
+		height:240px;
+		width:240px;
+		margin:50px 0;
+	}
 }
 
 #myCarousel .item .side-text{
