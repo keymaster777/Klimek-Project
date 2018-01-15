@@ -97,35 +97,6 @@ p{
 
 
 
-/* Page Header Styles */
-.page-header{
-	margin-top:50px;
-	width:100%;
-	background-size: cover;
-	text-align: center;
-	padding:0;
-	/* Should be 5 rather then 3 on pages without a sub-header */
-	margin-bottom:5vh;
-}
-.page-header h1{
-	font-size: 3.5rem;
-	color:white;
-}
-.header-text{
-	padding:8vh 0;
-}
-.header-text h1{
-	background:rgba(0,0,0,.6);
-	display:inline;
-	padding:.3rem 1.2rem;
-	border-radius: 4.5rem;
-}
-.about-header{
-	background: url("grapes.jpg") center center no-repeat;
-}
-/* END Page Header Styles */
-
-
 
 /* Footer Styles */
 footer{
