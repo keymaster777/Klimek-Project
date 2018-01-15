@@ -1,6 +1,7 @@
 /* Styles for Navbar */
 .navbar-inverse{
 	border-radius:0;
+	border-bottom:4px solid rgb(36, 103, 141);
 }
 #branding{
 	color:white;
@@ -32,6 +33,9 @@
 	border-bottom:2px solid white;
 	color:white;
 }
+body{
+	margin-top:50px;
+}
 /* END Styles for Navbar */
 
 
@@ -50,43 +54,13 @@ html {
 	margin-bottom: 1rem;
 	margin-top:1rem;
 }
-.center{
-	text-align: center;
-}
 p{
 	font-size: 1.3rem;
 }
+.body-top-margin{
+	margin-top:6vh;
+}
 /* END Typography Styles */
-
-
-
-/* Page Header Styles */
-.page-header{
-	margin-top:50px;
-	width:100%;
-	background-size: cover;
-	text-align: center;
-	padding:0;
-	/* Should be 5 rather then 3 on pages without a sub-header */
-	margin-bottom:3vh;
-}
-.page-header h1{
-	font-size: 3.5rem;
-	color:white;
-}
-.header-text{
-	padding:8vh 0;
-}
-.header-text h1{
-	background:rgba(0,0,0,.6);
-	display:inline;
-	padding:.3rem 1.2rem;
-	border-radius: 4.5rem;
-}
-.work-header{
-	background: url("work.jpg") center center no-repeat;
-}
-/* END Page Header Styles */
 
 
 
