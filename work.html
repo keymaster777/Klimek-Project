@@ -31,6 +31,15 @@
 					$(this).siblings(".my-active").removeClass("my-active");
 					$(this).addClass("my-active");
 				});
+
+				$("#carousel-nav-toggle").on('click', function(){
+					$(this).parent().toggleClass("carousel-nav-shift");
+				});
+				$("#my-carousel-indicator").on('click', function(){
+					setTimeout(function(){
+						$("#my-carousel-indicator").parent().toggleClass("carousel-nav-shift");
+					}, 500);
+				});
 			});
 		</script>
 	</head>
@@ -64,7 +73,7 @@
 			<div id="myCarousel" class="carousel slide gray-card row" data-ride="carousel" data-interval="false">
 
 
-				<div class="col-sm-12 col-md-9 carousel-main"
+				<div class="col-sm-12 col-md-9 carousel-main">
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 
@@ -175,7 +184,10 @@
 				</div>
 				<!-- Indicators -->
 
-				<div class="col-sm-0 col-md-3 carousel-nav">										
+				<div class="col-sm-0 col-md-3 carousel-nav">
+					<div class="carousel-nav-expand" id="carousel-nav-toggle">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>										
 					<ul id="my-carousel-indicator">
 						<li data-target="#myCarousel" data-slide-to="0" class="my-active">Common Crow</li>
 						<li data-target="#myCarousel" data-slide-to="1">Common Ground</li>

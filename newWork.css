@@ -134,8 +134,11 @@ p{
 div.carousel-nav{
 	padding:0;
 	height:340px;
-	overflow-y:scroll;
+}
+.carousel-nav ul{
 	overflow-x:hidden;
+	overflow-y:scroll;
+	height:340px;
 }
 .carousel-nav li{
 	font-size: 120%;
@@ -229,6 +232,9 @@ button:hover{
 	div#myCarousel{
 		padding:0 10px 0 0;
 	}
+	.carousel-nav-expand{
+		display:none;
+	}
 }
 @media only screen and (max-width: 1199px){
 	#myCarousel img{
@@ -239,17 +245,44 @@ button:hover{
 	div#myCarousel{
 		padding:0 10px 0 0;
 	}
+	.carousel-nav-expand{
+		display:none;
+	}
 }
 @media only screen and (max-width: 991px){
+	div#myCarousel{
+		padding:0;
+		overflow:hidden !important;
+	}
+	#my-carousel{
+		position:relative;
+	}
 	.carousel-nav{
-		display:none;
+		position:absolute;
+		right:-33%;
+		width:33%;
+		background-color:white;
+		border-left:2px solid rgb(36, 103, 141);
+		/*overflow:visible !important; */
+		-o-transition:.25s;
+	    -ms-transition:.25s;
+	    -moz-transition:.25s;
+	    -webkit-transition:.25s;
+	    transition:.25s;
+	}
+	.carousel-nav-shift{
+		right:0%;
 	}
 	.carousel-main{
 		border-right:none;
 		padding: 0 30px;
 	}
-	div#myCarousel{
-		padding:0;
+
+	.carousel-nav-expand{
+		display:block;
+		position:absolute;
+		left:-30px;
+		font-size: 25px;
 	}
 }
 /* END Carousel Styles */
