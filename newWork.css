@@ -79,8 +79,6 @@ p{
 	border-radius: 50%;
 	object-fit: cover;
 	padding: 0;
-	float:right;
-	
 }
 
 
@@ -127,9 +125,7 @@ p{
 	line-height: normal;
 	display:none;
 }
-.carousel-main{
-	border-right:2px solid rgb(36, 103, 141);
-}
+
 
 div.carousel-nav{
 	padding:0;
@@ -167,7 +163,10 @@ ul#my-carousel-indicator{
 	border-top:none;
 }
 .carousel-main{
-	padding: 0 10px;
+	padding: 0 30px;
+}
+.carousel-nav{
+	border-left:2px solid rgb(36, 103, 141);
 }
 .my-active{
 	background-color: rgba(36, 103, 141, 0.6);
@@ -176,6 +175,11 @@ ul#my-carousel-indicator{
 	background-color: rgba(36, 103, 141, 0.6);
 	padding-left: 7px;
 }
+.portfolio-info{
+	width:240px;
+	float:right;
+}
+/*
 button{
 	float:right;
 	margin:2px;
@@ -191,6 +195,7 @@ button{
 button:hover{
 	background-color:rgb(27, 77, 106);
 }
+*/
 .modal-title{
 	text-align: center;
 	font-size: 200%;
@@ -225,8 +230,8 @@ button:hover{
 
 @media only screen and (min-width: 1200px){
 	#myCarousel img{
-		height:300px;
-		width:300px;
+		height:240px;
+		width:240px;
 		margin:20px 0;
 	}
 	div#myCarousel{
@@ -240,7 +245,7 @@ button:hover{
 	#myCarousel img{
 		height:240px;
 		width:240px;
-		margin:50px 0;
+		margin:20px 0;
 	}
 	div#myCarousel{
 		padding:0 10px 0 0;
@@ -263,7 +268,6 @@ button:hover{
 		width:33%;
 		background-color:white;
 		border-left:2px solid rgb(36, 103, 141);
-		/*overflow:visible !important; */
 		-o-transition:.25s;
 	    -ms-transition:.25s;
 	    -moz-transition:.25s;
@@ -275,7 +279,7 @@ button:hover{
 	}
 	.carousel-main{
 		border-right:none;
-		padding: 0 30px;
+		
 	}
 
 	.carousel-nav-expand{
