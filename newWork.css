@@ -179,23 +179,9 @@ ul#my-carousel-indicator{
 	width:240px;
 	float:right;
 }
-/*
-button{
-	float:right;
-	margin:2px;
-	height:33px;
-	margin-right:25px;
-	background-color: rgb(36, 103, 141);
-	color:white;
-	font-size: 120%;
-	border:none;
-	border-radius:4px;
-	transition: all 0.2s ease;
+.portfolio-info button{
+	margin-bottom:5px;
 }
-button:hover{
-	background-color:rgb(27, 77, 106);
-}
-*/
 .modal-title{
 	text-align: center;
 	font-size: 200%;
