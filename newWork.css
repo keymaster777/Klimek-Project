@@ -163,7 +163,7 @@ ul#my-carousel-indicator{
 	border-top:none;
 }
 .carousel-main{
-	padding: 0 20px;
+	padding: 0 15px;
 }
 .carousel-nav{
 	border-left:2px solid rgb(36, 103, 141);
@@ -273,6 +273,10 @@ ul#my-carousel-indicator{
 		position:absolute;
 		left:-30px;
 		font-size: 25px;
+		cursor:pointer;
+	}
+	.carousel-inner div div.row{
+		margin:0;
 	}
 }
 /* END Carousel Styles */
