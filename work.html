@@ -14,6 +14,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
+
 				$('.fa-stack').on('click', function() {
 					if( $(this).next().css('display') == 'none'){
 						$(this).siblings('.tag-text').hide(200);
@@ -21,6 +22,10 @@
 					}else{
 						$(this).next().hide(200);
 					}
+				});
+
+				$("#myCarousel").resize(function(){
+					alert("changed");
 				});
 
 				$('.carousel-control').on('click', function() {
@@ -41,6 +46,7 @@
 					}, 500);
 				});
 			});
+
 		</script>
 	</head>
 

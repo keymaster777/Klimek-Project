@@ -129,7 +129,6 @@ p{
 
 div.carousel-nav{
 	padding:0;
-	height:340px;
 }
 .carousel-nav ul{
 	overflow-x:hidden;
@@ -240,7 +239,9 @@ ul#my-carousel-indicator{
 		display:none;
 	}
 }
-@media only screen and (max-width: 991px){
+@media only screen
+ and (min-width:768px)
+ and (max-width: 991px){
 	div#myCarousel{
 		padding:0;
 		overflow:hidden !important;
@@ -267,18 +268,58 @@ ul#my-carousel-indicator{
 		border-right:none;
 		
 	}
-
 	.carousel-nav-expand{
 		display:block;
 		position:absolute;
 		left:-30px;
 		font-size: 25px;
 		cursor:pointer;
+		padding-bottom:10px; /* For more clicking space */
 	}
 	.carousel-inner div div.row{
 		margin:0;
 	}
 }
+@media only screen and (max-width:767px){
+	div#myCarousel{
+		padding:0;
+		overflow:hidden !important;
+		width:100%;
+		max-width:500px;
+	}
+	#my-carousel{
+		position:relative;
+	}
+	.carousel-nav{
+		position:absolute;
+		right:-70%;
+		width:70%;
+		background-color:white;
+		border-left:2px solid rgb(36, 103, 141);
+		-o-transition:.25s;
+	    -ms-transition:.25s;
+	    -moz-transition:.25s;
+	    -webkit-transition:.25s;
+	    transition:.25s;
+	}
+	.carousel-nav-shift{
+		right:0%;
+	}
+	.carousel-main{
+		border-right:none;
+		
+	}
+	.carousel-nav-expand{
+		display:block;
+		position:absolute;
+		left:-30px;
+		font-size: 25px;
+		cursor:pointer;
+		padding-bottom:10px; /* For more clicking space */
+	}
+}
+
+
 /* END Carousel Styles */
 
 
