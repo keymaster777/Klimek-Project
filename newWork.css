@@ -82,10 +82,9 @@ p{
 }
 
 
-#myCarousel .item .side-text{
+.side-text{
 	clear:left;
 	color:black;
-	margin-right:1rem;
 	font-size: 1.5rem;
 	margin-bottom:0;
 }
@@ -94,7 +93,7 @@ p{
 	color:rgb(36, 103, 141);
 }
 .carousel-control{
-	width:3%;
+	width:4%;
 }
 .carousel-control:hover{
 	color:rgb(36, 103, 141);
@@ -105,18 +104,21 @@ p{
 #myCarousel h3{
 	color:rgb(36, 103, 141);
 	margin-top:10px;
-	margin-bottom: 5px;
+	
 }
 .fa-circle{
 	color:rgb(36, 103, 141);
 	transition: all 0.2s ease;
+	margin-bottom:5px;
 }
 .work .fa-stack:hover .fa-circle{
 	color:rgb(27, 77, 106);
+
 }
 
 #myCarousel .fa-stack{
 	cursor:pointer;
+	margin-bottom: 5px;
 }
 .tag-text{
 	font-size: 1.5rem;
@@ -148,7 +150,6 @@ ul#my-carousel-indicator{
 	border-top:1px solid rgb(36, 103, 141);
 	padding-left:10px;
 	cursor:pointer;
-	width:262px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -162,7 +163,7 @@ ul#my-carousel-indicator{
 	border-top:none;
 }
 .carousel-main{
-	padding: 0 15px;
+	padding: 0 25px;
 }
 .carousel-nav{
 	border-left:2px solid rgb(36, 103, 141);
@@ -286,6 +287,7 @@ ul#my-carousel-indicator{
 		overflow:hidden !important;
 		width:100%;
 		max-width:500px;
+		margin:auto;
 	}
 	#my-carousel{
 		position:relative;
@@ -316,6 +318,12 @@ ul#my-carousel-indicator{
 		font-size: 25px;
 		cursor:pointer;
 		padding-bottom:10px; /* For more clicking space */
+	}
+	.side-text, .tag-text{
+		font-size: 1.3rem;
+	}
+	.fa-stack{
+		font-size: 16px;
 	}
 }
 
