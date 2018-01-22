@@ -67,7 +67,7 @@ p{
 /* Carousel Styles */
 .gray-card{
 	border:2px solid rgb(36, 103, 141);
-	border-radius: .7rem;
+	border-radius: 7px;
 	padding:.7rem;
 	background:#f2f1f6;
 	margin:.7rem 0;
@@ -283,9 +283,15 @@ ul#my-carousel-indicator{
 		display:block;
 		position:absolute;
 		left:-30px;
+		width:40px;
+		text-align:center;
+		left:-40px;
+		border-left: 2px solid rgb(36, 103, 141);
+		border-bottom: 2px solid rgb(36, 103, 141);
+		border-radius: 0 7px 0 7px;
+		background-color:white;
 		font-size: 25px;
 		cursor:pointer;
-		padding-bottom:10px; /* For more clicking space */
 	}
 	.carousel-inner div div.row{
 		margin:0;
@@ -324,10 +330,15 @@ ul#my-carousel-indicator{
 	.carousel-nav-expand{
 		display:block;
 		position:absolute;
-		left:-30px;
+		width:40px;
+		text-align:center;
+		left:-41px;
 		font-size: 25px;
 		cursor:pointer;
-		padding-bottom:10px; /* For more clicking space */
+		border-left: 2px solid rgb(36, 103, 141);
+		border-bottom: 2px solid rgb(36, 103, 141);
+		border-radius: 0 7px 0 7px;
+		background-color:white;
 	}
 	.side-text, .tag-text{
 		font-size: 1.3rem;
