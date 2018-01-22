@@ -14,7 +14,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				setCarouselSize(false);
+				setupCarouselSize();
+				$(window).resize(function(){
+					setupCarouselSize();
+				});
 				$('.fa-stack').on('click', function() {
 					if( $(this).next().css('display') == 'none'){
 						$(this).siblings('.tag-text').hide(200);
@@ -26,6 +29,19 @@
 
 				$('.carousel-control').on('click', function() {
 					$('.tag-text').hide();
+					if($(this).hasClass("left")){
+						if($("#myCarousel .active").is(":first-child"))
+							var newHeight = $("#myCarousel .active").siblings().last(".item").first().height();
+						else
+							var newHeight = $("#myCarousel .active").prev(".item").first().height();
+            			$("#myCarousel").animate({height: newHeight+5},600,function(){});
+					}else{
+						if($("#myCarousel .active").is(":last-child"))
+							var newHeight = $("#myCarousel .active").siblings().first(".item").first().height();
+						else
+							var newHeight = $("#myCarousel .active").next(".item").first().height();
+	            		$("#myCarousel").animate({height: newHeight+5},600,function(){});
+					}
 				});
 
 				$('#my-carousel-indicator li').on('click', function(){
@@ -39,19 +55,12 @@
 				$("#my-carousel-indicator").on('click', function(){
 					setTimeout(function(){
 						$("#my-carousel-indicator").parent().toggleClass("carousel-nav-shift");
-					}, 500);
+					}, 600);
 				});
-				$("#myCarousel").on('slide.bs.carousel', function () {
-					var newHeight = $("#myCarousel .active").next(".item").first().height();
-            		$("#myCarousel").animate({height: newHeight+5},500,function(){});
-    			});
+				
 			});
-			function setCarouselSize(ease){
-				if(ease){
-
-				}else{
-					$("#myCarousel").height($(".active").height() +5);
-				}
+			function setupCarouselSize(){
+				$("#myCarousel").height($(".active").height() +5);
 			}
 		</script>
 	</head>
@@ -91,30 +100,33 @@
 
 					<div class="item active">
 						<div class="row">
-							<div class="col-xs-12 col-sm-7 col-md-push-5">
+							<div class="col-xs-12 col-sm-7 col-md-push-5 test-class">
 								<h2 class="blue-heading">Common Crow</h2>
+
 								<p class="side-text">
 									Common Crow is an independently owned natural food store that I've had the pleasure of working with. They rock the community they  provide for and think outside the box when it comes to merchandising and product selection.
 								</p>
-								<h3>What I did</h3>
-								<span class="fa-stack fa-lg" title="Store Design">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
-								</span>
-								<span class="tag-text">Store Design</span>
-								
-								<span class="fa-stack fa-lg" title="Interior Design">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
-								</span>
-								<span class="tag-text">Interior Design</span>
 
-								<span class="fa-stack fa-lg" title="Equipment">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-								</span>
-								<span class="tag-text">Equipment</span>
+								<div class="definition-icon-group">
+									<h3 >What I did</h3>
+									<span class="fa-stack fa-lg" title="Store Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Store Design</span>
+									
+									<span class="fa-stack fa-lg" title="Interior Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Interior Design</span>
 
+									<span class="fa-stack fa-lg" title="Equipment">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Equipment</span>
+								</div>
 								<div class="visible-xs mobile-info-buttons">
 									<div class="col-xs-6">
 										<button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#commonCrowModal">Gallery</button>
@@ -123,6 +135,7 @@
 										<button class="btn btn-primary btn-block">Web Site</button>
 									</div>
 								</div>
+
 							</div>	
 							<div class="hidden-xs col-sm-5 col-md-pull-7">
 								<div class="portfolio-info text-center">
@@ -136,30 +149,40 @@
 
 					<div class="item">
 						<div class="row">
-
-							<div class="col-xs-12 col-sm-7 col-md-push-5">
+							<div class="col-xs-12 col-sm-7 col-md-push-5 test-class">
 								<h2 class="blue-heading">Common Ground</h2>
 								<p class="side-text">
 									I've worked with CGFC for years and they continue to project a spectacular brand identity and create innovative solutions to keep their shoppers engaged.
 								</p>
-								<h3>What I did</h3>
-								<span class="fa-stack fa-lg" title="Store Design">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
-								</span>
-								<span class="tag-text">Store Design</span>
 
-								<span class="fa-stack fa-lg" title="Interior Design">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
-								</span>
-								<span class="tag-text">Interior Design</span>
-								
-								<span class="fa-stack fa-lg" title="Marketing">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-pie-chart fa-stack-1x fa-inverse"></i>
-								</span>
-								<span class="tag-text">Marketing</span>
+								<div class="definition-icon-group">
+									<h3>What I did</h3>
+									<span class="fa-stack fa-lg" title="Store Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Store Design</span>
+
+									<span class="fa-stack fa-lg" title="Interior Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Interior Design</span>
+									
+									<span class="fa-stack fa-lg" title="Marketing">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-pie-chart fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Marketing</span>
+								</div>
+								<div class="visible-xs mobile-info-buttons">
+									<div class="col-xs-6">
+										<button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#commonCrowModal">Gallery</button>
+									</div>
+									<div class="col-xs-6">
+										<button class="btn btn-primary btn-block">Web Site</button>
+									</div>
+								</div>
 							</div>
 							<div class="hidden-xs col-sm-5 col-md-pull-7">
 								<div class="portfolio-info text-center">
@@ -172,23 +195,33 @@
 					</div>
 					<div class="item">	
 						<div class="row">
-							<div class="col-xs-12 col-sm-7 col-md-push-5">
+							<div class="col-xs-12 col-sm-7 col-md-push-5 test-class">
 								<h2 class="blue-heading">Dandelion Foods</h2>
 								<p class="side-text">
 									This co-op does an amazing job of bringing service, food and education to their Almonte community. They continue to grow and I'm so happy to shop there any time I'm in the area!
 								</p>
-								<h3>What I did</h3>
-								<span class="fa-stack fa-lg" title="Store Design">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
-								</span>
-								<span class="tag-text">Store Design</span>
+								<div class="definition-icon-group">
+									<h3>What I did</h3>
+									<span class="fa-stack fa-lg" title="Store Design">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Store Design</span>
 
-								<span class="fa-stack fa-lg" title="Equipment">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-								</span>
-								<span class="tag-text">Equipment</span>
+									<span class="fa-stack fa-lg" title="Equipment">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+									</span>
+									<span class="tag-text">Equipment</span>
+								</div>
+								<div class="visible-xs mobile-info-buttons">
+									<div class="col-xs-6">
+										<button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#commonCrowModal">Gallery</button>
+									</div>
+									<div class="col-xs-6">
+										<button class="btn btn-primary btn-block">Web Site</button>
+									</div>
+								</div>
 							</div>
 							<div class="hidden-xs col-sm-5 col-md-pull-7">
 								<div class="portfolio-info text-center">

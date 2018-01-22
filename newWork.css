@@ -125,12 +125,15 @@ p{
 	color:rgb(36, 103, 141);
 	vertical-align: middle;
 	line-height: normal;
+	white-space: nowrap;
 	display:none;
 }
 
-
 div.carousel-nav{
 	padding:0;
+}
+.carousel-inner{
+	height:inherit;
 }
 .carousel-nav ul{
 	overflow-x:hidden;
@@ -164,6 +167,7 @@ ul#my-carousel-indicator{
 }
 .carousel-main{
 	padding: 0 25px;
+	height:inherit;
 }
 .carousel-nav{
 	border-left:2px solid rgb(36, 103, 141);
@@ -182,6 +186,9 @@ ul#my-carousel-indicator{
 }
 .portfolio-info button{
 	margin-bottom:5px;
+}
+.definition-icon-group{
+	text-align:left;
 }
 .modal-title{
 	text-align: center;
@@ -327,6 +334,7 @@ ul#my-carousel-indicator{
 	}
 	.fa-stack{
 		font-size: 16px;
+		line-height: 32px
 	}
 	.work h3{
 		margin:5px 0;
@@ -336,10 +344,16 @@ ul#my-carousel-indicator{
 	}
 	.mobile-info-buttons div:first-of-type{
 		padding-left:0px;
+		padding-right:2%;
 	}
 	.mobile-info-buttons div:last-of-type{
 		padding-right:0px;
+		padding-left:2%;
 	}
+	.definition-icon-group{
+	text-align:center;
+	}
+
 }
 
 
