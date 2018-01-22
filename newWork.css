@@ -135,7 +135,7 @@ div.carousel-nav{
 .carousel-nav ul{
 	overflow-x:hidden;
 	overflow-y:scroll;
-	height:340px;
+	height:inherit;
 }
 .carousel-nav li{
 	font-size: 120%;
@@ -167,6 +167,7 @@ ul#my-carousel-indicator{
 }
 .carousel-nav{
 	border-left:2px solid rgb(36, 103, 141);
+	height:inherit;
 }
 .my-active{
 	background-color: rgba(36, 103, 141, 0.6);
@@ -222,6 +223,7 @@ ul#my-carousel-indicator{
 	}
 	div#myCarousel{
 		padding:0 10px 0 0;
+		overflow:hidden !important;
 	}
 	.carousel-nav-expand{
 		display:none;
@@ -235,6 +237,7 @@ ul#my-carousel-indicator{
 	}
 	div#myCarousel{
 		padding:0 10px 0 0;
+		overflow:hidden !important;
 	}
 	.carousel-nav-expand{
 		display:none;
@@ -327,6 +330,15 @@ ul#my-carousel-indicator{
 	}
 	.work h3{
 		margin:5px 0;
+	}
+	.mobile-info-buttons button{
+		margin-bottom:5px;
+	}
+	.mobile-info-buttons div:first-of-type{
+		padding-left:0px;
+	}
+	.mobile-info-buttons div:last-of-type{
+		padding-right:0px;
 	}
 }
 

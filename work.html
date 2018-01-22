@@ -14,7 +14,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-
+				setCarouselSize(false);
 				$('.fa-stack').on('click', function() {
 					if( $(this).next().css('display') == 'none'){
 						$(this).siblings('.tag-text').hide(200);
@@ -22,10 +22,6 @@
 					}else{
 						$(this).next().hide(200);
 					}
-				});
-
-				$("#myCarousel").resize(function(){
-					alert("changed");
 				});
 
 				$('.carousel-control').on('click', function() {
@@ -45,8 +41,18 @@
 						$("#my-carousel-indicator").parent().toggleClass("carousel-nav-shift");
 					}, 500);
 				});
+				$("#myCarousel").on('slide.bs.carousel', function () {
+					var newHeight = $("#myCarousel .active").next(".item").first().height();
+            		$("#myCarousel").animate({height: newHeight+5},500,function(){});
+    			});
 			});
+			function setCarouselSize(ease){
+				if(ease){
 
+				}else{
+					$("#myCarousel").height($(".active").height() +5);
+				}
+			}
 		</script>
 	</head>
 
@@ -109,6 +115,14 @@
 								</span>
 								<span class="tag-text">Equipment</span>
 
+								<div class="visible-xs mobile-info-buttons">
+									<div class="col-xs-6">
+										<button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#commonCrowModal">Gallery</button>
+									</div>
+									<div class="col-xs-6">
+										<button class="btn btn-primary btn-block">Web Site</button>
+									</div>
+								</div>
 							</div>	
 							<div class="hidden-xs col-sm-5 col-md-pull-7">
 								<div class="portfolio-info text-center">
