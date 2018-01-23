@@ -284,7 +284,7 @@ ul#my-carousel-indicator{
 		position:absolute;
 		width:40px;
 		text-align:center;
-		left:-40px;
+		left:-42px;
 		border-left: 2px solid rgb(36, 103, 141);
 		border-bottom: 2px solid rgb(36, 103, 141);
 		border-radius: 0 7px 0 7px;
@@ -331,7 +331,7 @@ ul#my-carousel-indicator{
 		position:absolute;
 		width:40px;
 		text-align:center;
-		left:-41px;
+		left:-42px;
 		font-size: 25px;
 		cursor:pointer;
 		border-left: 2px solid rgb(36, 103, 141);

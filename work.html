@@ -47,6 +47,9 @@
 				$('#my-carousel-indicator li').on('click', function(){
 					$(this).siblings(".my-active").removeClass("my-active");
 					$(this).addClass("my-active");
+					var indexOfClicked = $(this).index();
+				    var newHeight = $(".item:eq(" + indexOfClicked + ")").height();
+				    $("#myCarousel").animate({height: newHeight+5},600,function(){});
 				});
 
 				$("#carousel-nav-toggle").on('click', function(){
@@ -193,6 +196,7 @@
 							</div>							
 						</div>		
 					</div>
+
 					<div class="item">	
 						<div class="row">
 							<div class="col-xs-12 col-sm-7 col-md-push-5 test-class">
@@ -231,7 +235,6 @@
 								</div>	
 							</div>							
 						</div>
-						
 					</div>
 				</div>
 
